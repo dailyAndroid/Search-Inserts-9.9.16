@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hwhong.searchinserts.MainActivity">
+
+    <br.com.mauker.materialsearchview.MaterialSearchView
+        android:id="@+id/msv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editText"
+        android:layout_alignRight="@+id/add"
+        android:layout_alignEnd="@+id/add"
+        android:layout_above="@+id/finish" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/add"
+        android:layout_toStartOf="@+id/add" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/add"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish Adding"
+        android:id="@+id/finish"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/open"
+        android:layout_toStartOf="@+id/open" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Search"
+        android:id="@+id/open"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/add"
+        android:layout_alignEnd="@+id/add"
+        android:layout_marginRight="54dp"
+        android:layout_marginEnd="54dp" />
+
+</RelativeLayout>
